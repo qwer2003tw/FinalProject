@@ -17,7 +17,7 @@
     <script src="bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/js/jquery.backstretch.min.js"></script>
     <!--fans-->
-
+    <meta http-equiv="Page-Enter" content="blendTrans(Duration=1.0)">
 
   </head>
 
@@ -32,6 +32,7 @@
           fjs.parentNode.insertBefore(js, fjs);
         }(document, 'script', 'facebook-jssdk'));</script>
     <!--end facebook Link-->
+
       <!-- Loader
       <div class="loader">
         <div class="loader-img"></div>
@@ -39,7 +40,7 @@
       -->
 
       <!-- NAVBAR -->
-  		<nav class="navbar navbar-inverse navbar-no-bg" role="navigation">
+  		<nav class="navbar navbar-inverse navbar-no-bg transparent" role="navigation">
   			<div class="container">
   				<div class="navbar-header">
   					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#top-navbar-1">
@@ -59,17 +60,56 @@
   						<li><a class="scroll-link" href="#hungry">認識飢餓</a></li>
   						<li><a class="scroll-link" href="#donate">募款方式</a></li>
               <li><a class="scroll-link" href="#list">捐款名單</a></li>
-              <li><a class="scroll-link" href="#member">會員中心</a></li>
+              <li>
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#member">會員中心 <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">登入/註冊</a></li>
+                    <li><a href="#">會員資料</a></li>
+                  </ul>
+              </li>
               <li><a class="scroll-link" href="#about-us">關於我們</a></li>
   					</ul>
   				</div>
   			</div>
   		</nav>
-
+      <!--end NavBar-->
+      <!--Carousel-->
       <div class="row">
-        <div class="col-sm-8 col-sm-offset-2 text">
-          <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fpeoplefoodbank%3Fref%3Dbookmarks&tabs=timeline&width=500&height=350&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="500" height="350" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
-        </div>
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+          </ol>
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner" role="listbox">
+            <div class="item active" id="slide1">
+              <img src="img/weather.jpg" alt="p1">
+              <div class="carousel-caption">
+
+              </div>
+            </div>
+            <div class="item" id="slide2">
+              <img src="img/socialWorker.jpg" alt="p2">
+              <div class="carousel-caption">
+
+              </div>
+            </div>
+            <div class="item" id="slide3">
+              <img src="img/trash.jpg" alt="p3">
+              <div class="carousel-caption">
+
+              </div>
+            </div>
+          </div> <!--end carousel-inner-->
       </div>
+      <!--end Carousel-->
+
+      <!--
+      <div class="row">
+          <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fpeoplefoodbank%3Fref%3Dbookmarks&tabs=timeline&width=500&height=350&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="500" height="350" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+      </div>
+    -->
   </body>
 </html>

@@ -1,6 +1,24 @@
+body{
+  font-family: FontAwesome;
+  background-image: url("img/green.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
 .loader {
  border-top: 16px solid blue;
  border-right: 16px solid green;
  border-bottom: 16px solid red;
  border-left: 16px solid pink;
+}
+.navbar{
+  background-color: transparent;
+  /*opacity: 0.8;*/
+  border: none;
+}
+.carousel{
+  margin: auto;
+  width: 72%;
+  height: auto;
 }
