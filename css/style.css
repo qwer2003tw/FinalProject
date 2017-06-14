@@ -21,6 +21,9 @@ body{
   /*opacity: 0.8;*/
   box-shadow: #666 0px 2px 3px;
 }
+/*NavBar--------------------------------------------------*/
+
+
 
 .carousel{
   margin: auto;
@@ -84,6 +87,7 @@ body{
   line-height: 60px;
 }
 
+/*---------------------------------------FOOTER*/
 .footer{
   margin-top: 50px;
   padding-top: 50px;
@@ -97,11 +101,11 @@ body{
 }
 .footer .row{
   margin-top: 40px;
-  margin-left: 210px;
   margin-bottom: 50px;
-  width: 80%;
+  width: 100%;
 }
 .circle{
+  margin-left: 32%;
   width: 180px;
   height: 180px;
   background-color: RGB(238, 238, 238);
