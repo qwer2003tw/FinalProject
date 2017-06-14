@@ -95,6 +95,9 @@ body{
   background-color: white;
   height: auto;
 }
+.footer img:hover{
+  transform: scale(1.1);
+}
 .footer h2{
   padding-bottom: 30px;
   font-weight: bold;
