@@ -9,8 +9,8 @@
     <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/form-elements.css">
-    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/media-queries.css">
+    <link rel="stylesheet" href="css/style.css">
 
     <!--Javascript-->
     <script src="js/jquery-1.11.1.min.js"></script>
@@ -40,7 +40,7 @@
       -->
 
       <!-- NAVBAR -->
-  		<nav class="navbar navbar-inverse navbar-no-bg transparent" role="navigation">
+  		<nav class="navbar navbar-default transparent navbar-fixed-top" role="navigation">
   			<div class="container">
   				<div class="navbar-header">
   					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#top-navbar-1">
@@ -49,7 +49,7 @@
   						<span class="icon-bar"></span>
   						<span class="icon-bar"></span>
   					</button>
-  					<a class="navbar-brand" href="index.html">食物銀行 FoodBank</a>
+  					<a class="navbar-brand" href="index.html"><img width="50" height= "50"src="img/logo.png" alt=""></a>
   				</div>
   				<!-- Collect the nav links, forms, and other content for toggling -->
   				<div class="collapse navbar-collapse" id="top-navbar-1">
@@ -73,43 +73,115 @@
   			</div>
   		</nav>
       <!--end NavBar-->
-      <!--Carousel-->
-      <div class="row">
-        <div id="myCarousel" class="carousel slide" data-ride="carousel">
-          <!-- Indicators -->
-          <ol class="carousel-indicators">
-            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-            <li data-target="#myCarousel" data-slide-to="1"></li>
-            <li data-target="#myCarousel" data-slide-to="2"></li>
-          </ol>
-          <!-- Wrapper for slides -->
-          <div class="carousel-inner" role="listbox">
-            <div class="item active" id="slide1">
-              <img src="img/weather.jpg" alt="p1">
-              <div class="carousel-caption">
+      <div class="article">
+        <!--Carousel-->
+        <div class="row">
+          <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+              <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+              <li data-target="#myCarousel" data-slide-to="1"></li>
+              <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+              <div class="item active" id="slide1">
+                <img src="img/weather.jpg" alt="p1">
+                <div class="carousel-caption">
+                  <div class="text">
+                    <p>氣候變遷，跟你我有關
+                      氣候變遷 對人類 帶來的 不只是災難頻傳 還有 土壤乾化 更直接的影響是
+                      你我所需的糧食變少了 當有一天石油與電費比現在更昂貴 民生所需價格高漲
+                       吃飽 ..... 也就不再是一件 也就不再是一件 隨時可達成的任務了</p>
+                  </div>
+                </div>
+              </div>
+              <div class="item" id="slide2">
+                <img src="img/socialWorker.jpg" alt="p2">
+                <div class="carousel-caption">
+                  <div class="text">
+                    <p>社工，是最美麗溫暖的一群人
+                      可以為社會公益出一份力，是最驕傲又勇敢的件事 歡迎大家一
+                      起來參與食物銀行的工作
+                      我們長期需要志工來協助食物分配與運送的任務</p>
+                  </div>
+                </div>
+              </div>
+              <div class="item" id="slide3">
+                <img src="img/trash.jpg" alt="p3">
+                <div class="carousel-caption">
+                  <div class="text">
+                    <p>腐敗的垃圾，去了哪裡？
+                      掩埋垃圾造成土壤酸化， 這嚴重影響了土地的可用性 酸化後的土壤種植出遭受汙染作物
+                      而這些作物 汙染了你我的健康 更影響了世代 你我子孫的生命安全</p>
+                  </div>
+                </div>
+              </div>
+            </div> <!--end carousel-inner-->
+            <!-- Controls -->
+            <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+              <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+              <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a> <!--end control-->
+        </div> <!--end Carousel-->
+          <div class="whatWeDo">
+            <h1>我們做些什麼?</h1>
+            <h3>Food Bank 提供捐款平台，讓大家可以透過此平台改善飢餓問題並解決貧困，幫助弱勢族群，回饋社會</h3>
+          </div>
 
+
+          <div class="container">
+            <div class="row pic">
+              <div class="col-lg-4">
+                <img width="280" height="280" src="http://acumen.org/wp-content/uploads/2013/04/baco-280x280.png">
+                <h4>收集食物 不浪費任何資源</h4>
+              </div>
+              <div class="col-lg-4">
+                <img width="280" height="280" src="http://acumen.org/wp-content/uploads/2013/02/India-Kids-280x280.jpg">
+                <h4>幫助弱勢偏鄉孩童 遠離飢餓</h4>
+              </div>
+              <div class="col-lg-4">
+                <img width="280" height="280" src="http://www.solihullsfc.ac.uk/wp-content/uploads/2016/09/food_bank_2016.jpg">
+                <h4>將募得資源 發送各地</h4>
+              </div>
+            </div><!--end row pic-->
+
+
+            <div class="row operation">
+              <div class="col-lg-6">
+                <h2>食物銀行是一個社會慈善組織，收集來自全省各地量販店、中盤商、零售商、製造商、甚至個人捐贈的愛心物資，
+                  也會搶救即將被丟棄的可食用物資，進行妥善的儲存與分類後，再將食物重新分配給最需要的人們手中。</h2>
+              </div>
+              <div class="col-lg-6">
+                <img width="550" src="https://static1.squarespace.com/static/55e653c2e4b02be29ced27cd/t/562dd43be4b079eaf392c336/1454061456078/?format=750w" alt="">
               </div>
             </div>
-            <div class="item" id="slide2">
-              <img src="img/socialWorker.jpg" alt="p2">
-              <div class="carousel-caption">
-
+            <div class="row facebookFans">
+              <div class="col-lg-6">
+                <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fpeoplefoodbank%3Fref%3Dbookmarks&tabs=timeline&width=500&height=350&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="500" height="350" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
               </div>
-            </div>
-            <div class="item" id="slide3">
-              <img src="img/trash.jpg" alt="p3">
-              <div class="carousel-caption">
-
+              <div class="col-lg-6">
+                <h2>透過食物銀行的整合、供給，達到「資源不浪費，台灣無飢餓」的目標。確保可食用的食物不被浪費，且有效地分配給有需要的人。</h2>
               </div>
-            </div>
-          </div> <!--end carousel-inner-->
+            </div><!--end facebookFans-->
+          </div><!--end container-->
+      </div> <!--end article-->
+
+
+
+      <div class="footer">
+        <h2>幫助我們 現在捐款</h2>
+        <button type="button" class="btn btn-info">DONATE</button>
+        <p>&copy; 2017 ntut_csie_team4<p>
       </div>
-      <!--end Carousel-->
 
-      <!--
-      <div class="row">
-          <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fpeoplefoodbank%3Fref%3Dbookmarks&tabs=timeline&width=500&height=350&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="500" height="350" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
-      </div>
-    -->
+
+
+
+
   </body>
 </html>
