@@ -1,0 +1,22 @@
+.signUptext, .signIntext{
+  font-weight: bold;
+  margin-bottom: 30px;
+  text-align: center;
+}
+input{
+  margin-bottom: 20px;
+  margin-top: 5px;
+}
+
+.sign_row{
+  text-align: center;
+}
+.sign_row h4{
+  text-align: left;
+  padding-left: 30%;
+}
+.sign_btn {
+  width: 160px;
+  height: 50px;
+  margin-top: 20px;
+}

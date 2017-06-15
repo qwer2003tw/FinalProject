@@ -19,7 +19,7 @@
     <script src="assets/js/jquery.backstretch.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://www.gstatic.com/firebasejs/4.1.2/firebase.js"></script>
-    <script src="js/tt.js"></script>
+    <script src="js/firebase.js"></script>
   </head>
   <body>
       <!-- NAVBAR -->
@@ -37,7 +37,7 @@
   				<!-- Collect the nav links, forms, and other content for toggling -->
   				<div class="collapse navbar-collapse" id="top-navbar-1">
   					<ul class="nav navbar-nav navbar-right">
-  						<li><a class="scroll-link" href="#home">首頁</a></li>
+  						<li><a class="scroll-link" href="index.html">首頁</a></li>
   						<li><a class="scroll-link" href="#new">最新消息</a></li>
   						<li><a class="scroll-link" href="#service">服務對象</a></li>
   						<li><a class="scroll-link" href="#hungry">認識飢餓</a></li>
@@ -46,8 +46,8 @@
               <li>
                 <a class="dropdown-toggle" data-toggle="dropdown" href="#member">會員中心 <span class="caret"></span></a>
                   <ul class="dropdown-menu">
-                    <li><a href="#">登入/註冊</a></li>
-                    <li><a href="#">會員資料</a></li>
+                    <li><a href="signUpIn.html" id="signUpIn" onclick="checkUser()">登入/註冊</a></li>
+                    <li><a href="profile.html">會員資料</a></li>
                   </ul>
               </li>
               <li><a class="scroll-link" href="#about-us">關於我們</a></li>
@@ -57,37 +57,50 @@
   		</nav>
       <!--end NavBar-->
 
+      <div class="article" >
+        <div class="row sign_row">
+          <div class="col-lg-3 col-lg-offset-3">
+            <h1 class="signUptext">註冊</h2>
 
-      <div class="row">
-        <div class="col-lg-6">
-          <h2>註冊</h2>
+            <div class="email">
+              <h4>帳號(電子郵件)</h4>
+              <input id="account" type="email" name="email">
+            </div>
+            <div class="pwd">
+              <h4>密碼</h4>
+              <input id="pwd" type="password">
+            </div>
+            <div class="name">
+              <h4>姓名</h4>
+              <input id="name" type="name">
+            </div>
+            <div class="birth">
+              <h4>生日</h4>
+              <input id="birth" type="date">
+            </div>
+            <div class="phoneNum">
+              <h4>電話</h4>
+              <input id="phoneNum" type="tel">
+            </div>
+            <div class="submit">
+              <button type="submit" id="registerSmtBtn" class="sign_btn">註冊</button>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <h1 class="signIntext">會員登入</h2>
 
-          <div class="email">
-            <h4>電子郵件(登入帳號)：</h4>
-            <input id="account" type="email" name="email">
+            <div class="emailL">
+              <h4>帳號(電子郵件)</h4>
+              <input id="accountL" type="email" name="email">
+            </div>
+            <div class="pwdL">
+              <h4>密碼</h4>
+              <input id="pwdL" type="password">
+            </div>
+            <div class="submit">
+              <button type="submit" id="loginSmtBtn" class="sign_btn">登入</button>
+            </div>
           </div>
-          <div class="pwd">
-            <h4>登入密碼：</h4>
-            <input id="pwd" type="password">
-          </div>
-          <div class="name">
-            <h4>姓名：</h4>
-            <input id="name" type="text">
-          </div>
-          <div class="birth">
-            <h4>生日：</h4>
-            <input id="birth" type="date">
-          </div>
-          <div class="phoneNum">
-            <h4>電話：</h4>
-            <input id="phoneNum" type="tel">
-          </div>
-          <div class="submit">
-            <button type="submit" id="registerSmtBtn">Signup</button>
-          </div>
-        </div>
-        <div class="col-lg-6">
-
         </div>
       </div>
 
