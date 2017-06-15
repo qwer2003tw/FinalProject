@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>FoodBank</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:400,100,300,500">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/form-elements.css">
+    <link rel="stylesheet" href="css/media-queries.css">
+    <link rel="stylesheet" href="css/style.css">
+
+
+    <!--Javascript-->
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/jquery.backstretch.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.1.2/firebase.js"></script>
+    <script src="js/tt.js"></script>
+  </head>
+  <body>
+      <!-- NAVBAR -->
+  		<nav class="navbar navbar-default transparent navbar-fixed-top" role="navigation">
+  			<div class="container">
+  				<div class="navbar-header">
+  					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#top-navbar-1">
+  						<span class="sr-only">Toggle navigation</span>
+  						<span class="icon-bar"></span>
+  						<span class="icon-bar"></span>
+  						<span class="icon-bar"></span>
+  					</button>
+  					<a class="navbar-brand" href="index.html"><img width="50" height= "50"src="img/logo.png" alt=""></a>
+  				</div>
+  				<!-- Collect the nav links, forms, and other content for toggling -->
+  				<div class="collapse navbar-collapse" id="top-navbar-1">
+  					<ul class="nav navbar-nav navbar-right">
+  						<li><a class="scroll-link" href="#home">首頁</a></li>
+  						<li><a class="scroll-link" href="#new">最新消息</a></li>
+  						<li><a class="scroll-link" href="#service">服務對象</a></li>
+  						<li><a class="scroll-link" href="#hungry">認識飢餓</a></li>
+  						<li><a class="scroll-link" href="#donate">捐贈方式</a></li>
+              <li><a class="scroll-link" href="#list">捐款名單</a></li>
+              <li>
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#member">會員中心 <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">登入/註冊</a></li>
+                    <li><a href="#">會員資料</a></li>
+                  </ul>
+              </li>
+              <li><a class="scroll-link" href="#about-us">關於我們</a></li>
+  					</ul>
+  				</div>
+  			</div>
+  		</nav>
+      <!--end NavBar-->
+
+
+      <div class="row">
+        <div class="col-lg-6">
+          <h2>註冊</h2>
+
+          <div class="email">
+            <h4>電子郵件(登入帳號)：</h4>
+            <input id="account" type="email" name="email">
+          </div>
+          <div class="pwd">
+            <h4>登入密碼：</h4>
+            <input id="pwd" type="password">
+          </div>
+          <div class="name">
+            <h4>姓名：</h4>
+            <input id="name" type="text">
+          </div>
+          <div class="birth">
+            <h4>生日：</h4>
+            <input id="birth" type="date">
+          </div>
+          <div class="phoneNum">
+            <h4>電話：</h4>
+            <input id="phoneNum" type="tel">
+          </div>
+          <div class="submit">
+            <button type="submit" id="registerSmtBtn">Signup</button>
+          </div>
+        </div>
+        <div class="col-lg-6">
+
+        </div>
+      </div>
+
+      <!--Footer-->
+      <div class="footer">
+        <h2>幫助我們 現在捐款</h2>
+        <button type="button" class="btn btn-info">DONATE</button>
+        <div class="row">
+          <div class="col-lg-3">
+            <div class="circle">
+              <a href="mailto:peoplefoodbank@gmail.com" style="text-decoration:none;">
+                <img src="img/email.png" alt="">
+                <h4>Contact Us</h4>
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="circle">
+              <a href="https://www.facebook.com/peoplefoodbank?ref=bookmarks" style="text-decoration:none;">
+                <img src="img/facebook.png" alt="">
+                <h4>Follow FB</h4>
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="circle">
+              <a href="https://twitter.com/andrewfoodbank" style="text-decoration:none;">
+                <img src="img/twitter.png" alt="">
+                <h4>Follow Twitter</h4>
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="circle">
+              <a href="https://www.youtube.com/channel/UConKfoxGbmFEyiN17ykTHEg" style="text-decoration:none;">
+                <img src="img/youtube.png" alt="">
+                <h4>Subscribe</h4>
+              </a>
+            </div>
+          </div>
+        </div>
+        &copy; 2017 ntut_csie_team4
+      </div>
+  </body>
+</html>
