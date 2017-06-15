@@ -59,8 +59,6 @@ $(document).ready(function(){
    },false);
 }
 
-
-
   //登入
 if(loginSmtBtn != null)
 {
@@ -79,18 +77,6 @@ if(loginSmtBtn != null)
 
 }
 
-
-  //user logout
-  /*
-  var signoutSmtBtn = document.getElementById("signoutSmtBtn");
-  signoutSmtBtn.addEventListener("click",function(){
-      firebase.auth().signOut().then(function() {
-          console.log("User sign out!");
-      }, function(error) {
-      console.log("User sign out error!");
-      })
-  },false);
-*/
   //查看目前登入狀況
   var user;
   firebase.auth().onAuthStateChanged(function(user) {
