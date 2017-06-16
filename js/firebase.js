@@ -228,3 +228,6 @@ function uploaddb(dn, m, t) {
         location.href = "list.html";
     },500);
 }
+function linkToDonate() {
+          location.href = "donate.html";
+}
