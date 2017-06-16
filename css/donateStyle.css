@@ -1,0 +1,24 @@
+.numberPic{
+  width: 100px;
+}
+.part{
+  width: 80%;
+  margin-top: 70px;
+  padding-left: 15%;
+}
+.postAccount{
+  padding-bottom: 30px;
+}
+.part-content{
+  margin-left: 10%;
+}
+.part h2{
+  font-weight: bold;
+  color:#4B543B;
+}
+.way4{
+  width: 100%;
+  height: 500px;
+  background-color: white;
+  border-radius: 5px;
+}

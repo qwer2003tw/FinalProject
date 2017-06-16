@@ -15,10 +15,9 @@
 
     <!--Javascript-->
     <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/js/jquery.backstretch.min.js"></script>
-    <script
-      src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"</script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://www.gstatic.com/firebasejs/4.1.2/firebase.js"></script>
     <script src="js/firebase.js"></script>
@@ -43,7 +42,7 @@
   						<li><a class="scroll-link" href="#new">最新消息</a></li>
   						<li><a class="scroll-link" href="#service">服務對象</a></li>
   						<li><a class="scroll-link" href="#hungry">認識飢餓</a></li>
-  						<li><a class="scroll-link" href="#donate">捐贈方式</a></li>
+  						<li><a class="scroll-link" href="donate.html">捐贈方式</a></li>
               <li><a class="scroll-link" href="#list">捐款名單</a></li>
               <li>
                 <a class="dropdown-toggle" data-toggle="dropdown" href="#member">會員中心 <span class="caret"></span></a>
@@ -61,11 +60,10 @@
 
       <div class="article" >
         <div class="row">
-          <div class="col-lg-6 col-lg-offset-3">
+          <div class="col-lg-3 col-lg-offset-3">
             <div class="head">
               <img src="http://www.5525.org/Upload/doc/20150318/8261cd74d5dd415096c19ec648189507.png" width="100"  alt="">
             </div>
-
             <h4>姓名：<span id="nameDisplay"></span></h4>
             <h4>生日：<span id="birthDisplay"></span></h4>
             <h4>電子郵件：<span id="emailDisplay"></span></h4>
@@ -73,6 +71,12 @@
             <h4 id="recordDisplay"></h4>
             <div class="submit">
               <button type="submit" id="modify" class="sign_btn" onclick="modify()">修改資料</button>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="record">
+              <h2>捐款紀錄：</h2>
+              <h2>愛心排行：</h2>
             </div>
           </div>
         </div>

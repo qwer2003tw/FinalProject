@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>FoodBank</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:400,100,300,500">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/form-elements.css">
+    <link rel="stylesheet" href="css/media-queries.css">
+    <link rel="stylesheet" href="css/style.css">
+
+
+    <!--Javascript-->
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/jquery.backstretch.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.1.2/firebase.js"></script>
+    <script src="js/firebase.js"></script>
+  </head>
+  <body>
+      <!-- NAVBAR -->
+  		<nav class="navbar navbar-default transparent navbar-fixed-top" role="navigation">
+  			<div class="container">
+  				<div class="navbar-header">
+  					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#top-navbar-1">
+  						<span class="sr-only">Toggle navigation</span>
+  						<span class="icon-bar"></span>
+  						<span class="icon-bar"></span>
+  						<span class="icon-bar"></span>
+  					</button>
+  					<a class="navbar-brand" href="index.html"><img width="50" height= "50"src="img/logo.png" alt=""></a>
+  				</div>
+  				<!-- Collect the nav links, forms, and other content for toggling -->
+  				<div class="collapse navbar-collapse" id="top-navbar-1">
+  					<ul class="nav navbar-nav navbar-right">
+  						<li><a class="scroll-link" href="index.html">首頁</a></li>
+  						<li><a class="scroll-link" href="#new">最新消息</a></li>
+  						<li><a class="scroll-link" href="#service">服務對象</a></li>
+  						<li><a class="scroll-link" href="#hungry">認識飢餓</a></li>
+  						<li><a class="scroll-link" href="donate.html">捐贈方式</a></li>
+              <li><a class="scroll-link" href="#list">捐款名單</a></li>
+              <li>
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#member">會員中心 <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="signUpIn.html" id="signUpIn" onclick="checkUser()">登入/註冊</a></li>
+                    <li><a href="#" onclick="checkLogin()">會員資料</a></li>
+                  </ul>
+              </li>
+              <li><a class="scroll-link" href="#about-us">關於我們</a></li>
+  					</ul>
+  				</div>
+  			</div>
+  		</nav>
+      <!--end NavBar-->
+
+      <div class="article" >
+        <div class="part">
+          <h2><img src="img/1.png" alt="" class="numberPic">　郵政劃撥</h2>
+          <div class="part-content">
+            <h3>▶ 戶名：社團法人台灣全民食物銀行協會</h3>
+            <h3 class="postAccount">● 帳號：22727219</h3>
+            <h3>▶ 戶名：社團法人中華基督教救助協會</h3>
+            <h3 class="postAccount">● 帳號：19281908</h3>
+            <h3>▶ 戶名：社團法人中華安得烈慈善協會</h3>
+            <h3 class="postAccount">● 帳號：50200032</h3>
+          </div>
+        </div>
+        <div class="part">
+          <h2><img src="img/2.png" alt="" class="numberPic">　銀行匯款與 ATM轉帳</h2>
+          <div class="part-content">
+            <h3>☛ 銀行：103 臺灣新光商銀向上分行</h3>
+            <h3>☛ 帳號：0912-50-016228-4</h3>
+            <h3>☛ 戶名：社團法人台灣全民食物銀行協會</h3>
+          </div>
+        </div>
+        <div class="part">
+          <h2><img src="img/3.png" alt="" class="numberPic">　手機匯款</h2>
+          <div class="part-content">
+            <h3>☎ 台灣大哥大電信用戶請直撥「518080」，每筆捐款可選擇新台幣100元、500元、 1000元、1500元、2000元、3000元，捐款金額將合併於次月電信費帳單，方便繳納，語音捐款專線完全免費。</h3>
+          </div>
+        </div>
+        <div class="part">
+          <h2><img src="img/4.png" alt="" class="numberPic">　線上捐款</h2>
+          <div class="part-content">
+            <div class="way4">
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--Footer-->
+      <div class="footer">
+        <h2 style="display:none;">幫助我們 現在捐款</h2>
+        <button type="button" class="btn btn-info" style="display:none;">DONATE</button>
+        <div class="row">
+          <div class="col-lg-3">
+            <div class="circle">
+              <a href="mailto:peoplefoodbank@gmail.com" style="text-decoration:none;">
+                <img src="img/email.png" alt="">
+                <h4>Contact Us</h4>
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="circle">
+              <a href="https://www.facebook.com/peoplefoodbank?ref=bookmarks" style="text-decoration:none;">
+                <img src="img/facebook.png" alt="">
+                <h4>Follow FB</h4>
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="circle">
+              <a href="https://twitter.com/andrewfoodbank" style="text-decoration:none;">
+                <img src="img/twitter.png" alt="">
+                <h4>Follow Twitter</h4>
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="circle">
+              <a href="https://www.youtube.com/channel/UConKfoxGbmFEyiN17ykTHEg" style="text-decoration:none;">
+                <img src="img/youtube.png" alt="">
+                <h4>Subscribe</h4>
+              </a>
+            </div>
+          </div>
+        </div>
+        &copy; 2017 ntut_csie_team4
+      </div>
+  </body>
+</html>

@@ -7,3 +7,9 @@
   border: 1px solid black;
   border-radius: 5px;
 }
+.head{
+  margin-bottom: 50px;
+}
+.row h4{
+  line-height: 30px;
+}
