@@ -17,6 +17,8 @@
     <script src="js/jquery-1.11.1.min.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/js/jquery.backstretch.min.js"></script>
+    <script
+      src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"</script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://www.gstatic.com/firebasejs/4.1.2/firebase.js"></script>
     <script src="js/firebase.js"></script>
@@ -47,7 +49,7 @@
                 <a class="dropdown-toggle" data-toggle="dropdown" href="#member">會員中心 <span class="caret"></span></a>
                   <ul class="dropdown-menu">
                     <li><a href="signUpIn.html" id="signUpIn" onclick="checkUser()">登入/註冊</a></li>
-                    <li><a href="profile.html">會員資料</a></li>
+                    <li><a href="#" onclick="checkLogin()">會員資料</a></li>
                   </ul>
               </li>
               <li><a class="scroll-link" href="#about-us">關於我們</a></li>
@@ -60,19 +62,33 @@
       <div class="article" >
         <div class="row">
           <div class="col-lg-6 col-lg-offset-3">
+            <div class="head">
               <img src="http://www.5525.org/Upload/doc/20150318/8261cd74d5dd415096c19ec648189507.png" width="100"  alt="">
-              <h4>姓名：</h4>
-              <h4>生日：</h4>
-              <h4>電子郵件：</h4>
-              <h4>電話：</h4>
-              <h4>愛心紀錄：</h4>
-              <div class="submit">
-                <button type="submit" id="modify" class="sign_btn">修改資料</button>
-              </div>
+            </div>
+
+            <h4>姓名：<span id="nameDisplay"></span></h4>
+            <h4>生日：<span id="birthDisplay"></span></h4>
+            <h4>電子郵件：<span id="emailDisplay"></span></h4>
+            <h4>電話號碼：<span id="phoneDisplay"></span></h4>
+            <h4 id="recordDisplay"></h4>
+            <div class="submit">
+              <button type="submit" id="modify" class="sign_btn" onclick="modify()">修改資料</button>
+            </div>
           </div>
         </div>
       </div>
-
+      <div id="dialog" title="" style="display:none">
+        <!--button type="button" name="upload" id="upload">上傳圖片</button-->
+        <div class="head">
+          <img src="http://www.5525.org/Upload/doc/20150318/8261cd74d5dd415096c19ec648189507.png" width="100"  alt="">
+        </div>
+        <input id="uploadFileInput" type="file" accept="image/*">
+        <h4>姓名：</h4><input type="name"  id="nt1" value=""><br>
+        <h4>生日：</h4><input type="date"  id="nt2" value=""><br>
+        <h4>電子郵件：</h4><input type="mail"  id="nt3" value=""><br>
+        <h4>電話號碼：</h4><input type="tel"  id="nt4" value=""><br>
+        <button type="submit" name="button" onclick="Update()" id="update">送出</button>
+      </div>
       <!--Footer-->
       <div class="footer">
         <h2>幫助我們 現在捐款</h2>

@@ -29,6 +29,8 @@
 .whatWeDo {
   margin-top: 50px;
   text-align: center;
+  margin-left: 2%;
+  width: 95%;
 }
 .whatWeDo h1{
   font-weight: bold;
