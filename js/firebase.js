@@ -9,7 +9,8 @@ $(document).ready(function(){
     messagingSenderId: "364659582212"
    };
   firebase.initializeApp(config);
-
+  var dbRef;
+  dbRef=firebase.database().ref();
   //Email/Pwd註冊
   var loginUser;
   var account = document.getElementById("account");
@@ -84,9 +85,13 @@ if(loginSmtBtn != null)
 
   //查看目前登入狀況
   var user;
+
   firebase.auth().onAuthStateChanged(function(user) {
     if (user) {
     	user = user;
+
+
+      //if(!donateLogin)donateLogin.style.display = "none";
       console.log("User is logined", user);
       signUpIn.innerHTML= "登出";
 
@@ -106,6 +111,8 @@ if(loginSmtBtn != null)
       });
       // end profile
 
+      document.getElementById("donatelogIn").style.display = "none";
+      document.getElementById("donateForm").style.display = "block";
     } else {
     	user = null;
       console.log("User is not logined yet.");
@@ -113,41 +120,6 @@ if(loginSmtBtn != null)
     }
   });
 
-
-    /* upload file
-    var uploadFileInput = document.getElementById("uploadFileInput");
-    uploadFileInput.addEventListener("change", function(){
-          var file = this.files[0];
-          var uploadTask = storageRef.child('images/'+file.name).put(file);
-          uploadTask.on('state_changed', function(snapshot){
-            // 觀察狀態變化，例如：progress, pause, and resume
-
-            // 取得檔案上傳狀態，並用數字顯示
-
-            var progress = (snapshot.bytesTransferred / snapshot.totalBytes) * 100;
-            console.log('Upload is ' + progress + '% done');
-            switch (snapshot.state) {
-              case firebase.storage.TaskState.PAUSED: // or 'paused'
-
-                console.log('Upload is paused');
-                break;
-              case firebase.storage.TaskState.RUNNING: // or 'running'
-
-                console.log('Upload is running');
-                break;
-            }
-          }, function(error) {
-            // Handle unsuccessful uploads
-
-          }, function() {
-            // Handle successful uploads on complete
-
-            // For instance, get the download URL: https://firebasestorage.googleapis.com/...
-
-            var downloadURL = uploadTask.snapshot.downloadURL;
-          });
-    },false);
-*/
 });
 function checkUser() {
   firebase.auth().onAuthStateChanged(function(user) {
@@ -196,5 +168,27 @@ function Update() {
     console.error("寫入使用者資訊錯誤",error);
   });
   location.href = "profile.html";
+}
 
+function linkToSignIn(){
+  location.href ="signUpIn.html";
+}
+function submitBtn(){
+  alert("tes");
+  var money=$("#money").val();
+  var donateName=$("#donateName").val();
+  var thing=$("#thing").val();
+  uploaddb(donateName, money, thing);
+
+}
+function uploaddb(dn, m, t) {
+  　var Today=new Date();
+    var date=Today.getMonth()+1+"/"+Today.getDate()+" "+Today.getHours()+":"+Today.getMinutes()+":"+Today.getSeconds();
+    var dbRef;
+    dbRef=firebase.database().ref();
+    dbRef.push({'date':date,
+                'name':dn,
+                'money':m,
+                'thing':t
+    })
 }

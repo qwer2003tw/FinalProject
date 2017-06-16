@@ -16,7 +16,7 @@
     <!--Javascript-->
     <script src="js/jquery-1.11.1.min.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>
-    <script src="assets/js/jquery.backstretch.min.js"></script>
+    <!--script src="assets/js/jquery.backstretch.min.js"></script-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://www.gstatic.com/firebasejs/4.1.2/firebase.js"></script>
     <script src="js/firebase.js"></script>
@@ -86,8 +86,15 @@
         <div class="part">
           <h2><img src="img/4.png" alt="" class="numberPic">　線上捐款</h2>
           <div class="part-content">
-            <div class="way4">
+            <button type="button" class="btn btn-info" id="donatelogIn" onclick="linkToSignIn()">請登入</button>
 
+            <div class="way4" style="display:none;" id="donateForm">
+                <h4>姓名：<input type="" name="" value="" id="donateName"></h4>
+                <h4>捐款：<input type="number" name="" value="0" id="money">　元</h4>
+                <h4>捐物：<textarea name="textarea" style="width:80%;height:150px;" id="thing"></textarea></h4>
+                <div class="sent">
+                  <button type="button" class="btn btn-info" onclick="submitBtn()">送出</button>
+                </div>
             </div>
           </div>
         </div>
