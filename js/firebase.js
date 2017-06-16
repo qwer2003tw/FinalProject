@@ -46,7 +46,7 @@ $(document).ready(function(){
                   });
                   setTimeout(function(){
                       location.href = "index.html";
-                  },1000);
+                  },2000);
                 }).catch(function(error) {
                 // Handle Errors here.
                 alert("帳號或密碼輸入格式錯誤！");

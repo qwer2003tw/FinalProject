@@ -20,6 +20,10 @@
     <script src="assets/js/jquery.backstretch.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://www.gstatic.com/firebasejs/4.1.2/firebase.js"></script>
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.1/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.11.1/themes/smoothness/jquery-ui.css" />
+
     <script src="js/firebase.js"></script>
   </head>
   <body>
@@ -81,12 +85,12 @@
           </div>
         </div>
       </div>
-      <div id="dialog" title="" style="display:none">
+      <div id="dialog" title="修改個人資料" style="display:none" style="overflow-y: scroll; overflow-x: hidden;">
         <!--button type="button" name="upload" id="upload">上傳圖片</button-->
         <div class="head">
           <img src="http://www.5525.org/Upload/doc/20150318/8261cd74d5dd415096c19ec648189507.png" width="100"  alt="">
         </div>
-        <input id="uploadFileInput" type="file" accept="image/*">
+        <!--input id="uploadFileInput" type="file" accept="image/*"-->
         <h4>姓名：</h4><input type="name"  id="nt1" value=""><br>
         <h4>生日：</h4><input type="date"  id="nt2" value=""><br>
         <h4>電子郵件：</h4><input type="mail"  id="nt3" value=""><br>
