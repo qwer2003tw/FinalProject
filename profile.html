@@ -46,7 +46,7 @@
   						<li><a class="scroll-link" href="#service">服務對象</a></li>
   						<li><a class="scroll-link" href="#hungry">認識飢餓</a></li>
   						<li><a class="scroll-link" href="donate.html">捐贈方式</a></li>
-              <li><a class="scroll-link" href="#list">捐款名單</a></li>
+              <li><a class="scroll-link" href="list.html">捐款名單</a></li>
               <li>
                 <a class="dropdown-toggle" data-toggle="dropdown" href="#member">會員中心 <span class="caret"></span></a>
                   <ul class="dropdown-menu">
@@ -65,7 +65,7 @@
         <div class="row">
           <div class="col-lg-3 col-lg-offset-3">
             <div class="head">
-              <img src="http://www.5525.org/Upload/doc/20150318/8261cd74d5dd415096c19ec648189507.png" width="100"  alt="">
+              <img src="img/LOGO.png" width="250"  alt="">
             </div>
             <h4>姓名：<span id="nameDisplay"></span></h4>
             <h4>生日：<span id="birthDisplay"></span></h4>
@@ -79,17 +79,19 @@
           <div class="col-lg-4">
             <div class="record">
               <h2>捐款紀錄：</h2>
-              <h2>愛心排行：</h2>
+              <table border="1" id="ta1">
+              　<tr>
+              　<td width=100><h3>捐贈者</h3></td>
+                <td width=140><h3>日期</h3></td>
+                <td width=150><h3>捐款</h3></td>
+                <td width=200><h3>捐物</h3></td>
+              　</tr>
+              </table>
             </div>
           </div>
         </div>
       </div>
       <div id="dialog" title="修改個人資料" style="display:none" style="overflow-y: scroll; overflow-x: hidden;">
-        <!--button type="button" name="upload" id="upload">上傳圖片</button-->
-        <div class="head">
-          <img src="http://www.5525.org/Upload/doc/20150318/8261cd74d5dd415096c19ec648189507.png" width="100"  alt="">
-        </div>
-        <!--input id="uploadFileInput" type="file" accept="image/*"-->
         <h4>姓名：</h4><input type="name"  id="nt1" value=""><br>
         <h4>生日：</h4><input type="date"  id="nt2" value=""><br>
         <h4>電子郵件：</h4><input type="mail"  id="nt3" value=""><br>

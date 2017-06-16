@@ -19,6 +19,10 @@
     <!--script src="assets/js/jquery.backstretch.min.js"></script-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://www.gstatic.com/firebasejs/4.1.2/firebase.js"></script>
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.1/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.11.1/themes/smoothness/jquery-ui.css" />
+
     <script src="js/firebase.js"></script>
   </head>
   <body>
@@ -58,52 +62,23 @@
       <!--end NavBar-->
 
       <div class="article" >
-        <div class="part">
-          <h2><img src="img/1.png" alt="" class="numberPic">　郵政劃撥</h2>
-          <div class="part-content">
-            <h3>▶ 戶名：社團法人台灣全民食物銀行協會</h3>
-            <h3 class="postAccount">● 帳號：22727219</h3>
-            <h3>▶ 戶名：社團法人中華基督教救助協會</h3>
-            <h3 class="postAccount">● 帳號：19281908</h3>
-            <h3>▶ 戶名：社團法人中華安得烈慈善協會</h3>
-            <h3 class="postAccount">● 帳號：50200032</h3>
-          </div>
-        </div>
-        <div class="part">
-          <h2><img src="img/2.png" alt="" class="numberPic">　銀行匯款與 ATM轉帳</h2>
-          <div class="part-content">
-            <h3>☛ 銀行：103 臺灣新光商銀向上分行</h3>
-            <h3>☛ 帳號：0912-50-016228-4</h3>
-            <h3>☛ 戶名：社團法人台灣全民食物銀行協會</h3>
-          </div>
-        </div>
-        <div class="part">
-          <h2><img src="img/3.png" alt="" class="numberPic">　手機匯款</h2>
-          <div class="part-content">
-            <h3>☎ 台灣大哥大電信用戶請直撥「518080」，每筆捐款可選擇新台幣100元、500元、 1000元、1500元、2000元、3000元，捐款金額將合併於次月電信費帳單，方便繳納，語音捐款專線完全免費。</h3>
-          </div>
-        </div>
-        <div class="part">
-          <h2><img src="img/4.png" alt="" class="numberPic">　線上捐款</h2>
-          <div class="part-content">
-            <button type="button" class="btn btn-info" id="donatelogIn" onclick="linkToSignIn()">請登入</button>
-
-            <div class="way4" style="display:none;" id="donateForm">
-                <h4>姓名：<input type="" name="" value="" id="donateName"></h4>
-                <h4>捐款：<input type="number" name="" value="0" id="money">　元</h4>
-                <h4>捐物：<textarea name="textarea" style="width:80%;height:150px;" id="thing"></textarea></h4>
-                <div class="sent">
-                  <button type="button" class="btn btn-info" onclick="submitBtn()">送出</button>
-                </div>
-            </div>
+        <div class="row">
+          <div class="col-lg-6 col-md-6 col-sm-6 col-xs-8 col-lg-offset-4 col-md-offset-3 col-sm-offset-3 col-xs-offset-2">
+            <table border="1" id="ta">
+            　<tr>
+            　<td width=100><h3>捐贈者</h3></td>
+              <td width=140><h3>日期</h3></td>
+              <td width=150><h3>捐款</h3></td>
+              <td width=200><h3>捐物</h3></td>
+            　</tr>
+            </table>
           </div>
         </div>
       </div>
-
       <!--Footer-->
       <div class="footer">
-        <h2 style="display:none;">幫助我們 現在捐款</h2>
-        <button type="button" class="btn btn-info" style="display:none;">DONATE</button>
+        <h2>幫助我們 現在捐款</h2>
+        <button type="button" class="btn btn-info">DONATE</button>
         <div class="row">
           <div class="col-lg-3">
             <div class="circle">

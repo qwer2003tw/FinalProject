@@ -2,6 +2,7 @@
 @import url("signUpInStyle.css");
 @import url("profileStyle.css");
 @import url("donateStyle.css");
+@import url("listStyle.css");
 
 body{
   font-family: Microsoft JhengHei;

@@ -10,7 +10,18 @@ $(document).ready(function(){
    };
   firebase.initializeApp(config);
   var dbRef;
-  dbRef=firebase.database().ref();
+
+  dbRef=firebase.database().ref('/list/');
+  //
+  dbRef.on('child_added', function(snapshot) {
+      var v=snapshot.val();
+      var k="<tr><td width=100>"+v.name+"</td>"+"<td width=140>"+v.date+"</td>"+"<td width=150>"+v.money+"</td>"+"<td width=200>"+v.thing+"</td></tr>"
+      $("#ta").append(k);
+  });
+  // list
+
+  //
+
   //Email/Pwd註冊
   var loginUser;
   var account = document.getElementById("account");
@@ -47,7 +58,7 @@ $(document).ready(function(){
                   });
                   setTimeout(function(){
                       location.href = "index.html";
-                  },2000);
+                  },800);
                 }).catch(function(error) {
                 // Handle Errors here.
                 alert("帳號或密碼輸入格式錯誤！");
@@ -110,6 +121,18 @@ if(loginSmtBtn != null)
         //userInfo.innerHTML = userInfoText;
       });
       // end profile
+      var nowUser = firebase.auth().currentUser;
+      dbRef=firebase.database().ref('/users/' + nowUser.uid +'/list/');
+
+      dbRef.on('child_added', function(snapshot) {
+          var v=snapshot.val();
+          var k="<tr><td width=100>"+v.name+"</td>"+"<td width=140>"+v.date+"</td>"+"<td width=150>"+v.money+"</td>"+"<td width=200>"+v.thing+"</td></tr>"
+          $("#ta1").append(k);
+      });
+      // profile list
+
+
+      //
 
       document.getElementById("donatelogIn").style.display = "none";
       document.getElementById("donateForm").style.display = "block";
@@ -174,7 +197,6 @@ function linkToSignIn(){
   location.href ="signUpIn.html";
 }
 function submitBtn(){
-  alert("tes");
   var money=$("#money").val();
   var donateName=$("#donateName").val();
   var thing=$("#thing").val();
@@ -185,10 +207,24 @@ function uploaddb(dn, m, t) {
   　var Today=new Date();
     var date=Today.getMonth()+1+"/"+Today.getDate()+" "+Today.getHours()+":"+Today.getMinutes()+":"+Today.getSeconds();
     var dbRef;
-    dbRef=firebase.database().ref();
+    var user = firebase.auth().currentUser;
+    dbRef=firebase.database().ref('list/');
+
     dbRef.push({'date':date,
                 'name':dn,
                 'money':m,
                 'thing':t
     })
+
+    dbRef=firebase.database().ref('users/' + user.uid + '/list');
+    dbRef.push({'date':date,
+                'name':dn,
+                'money':m,
+                'thing':t
+    })
+
+    alert("謝謝您的愛心！");
+    setTimeout(function(){
+        location.href = "list.html";
+    },500);
 }
