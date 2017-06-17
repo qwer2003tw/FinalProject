@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>FoodBank</title>
     <!-- CSS -->
+
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:400,100,300,500">
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
@@ -11,6 +12,7 @@
     <link rel="stylesheet" href="css/form-elements.css">
     <link rel="stylesheet" href="css/media-queries.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/news.css">
 
     <!--Javascript-->
     <script src="js/jquery-1.11.1.min.js"></script>
@@ -31,28 +33,6 @@
   </head>
 
   <body>
-    <!--facebook Link-->
-    <div id="fb-root"></div>
-      <script>(function(d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) return;
-        js = d.createElement(s); js.id = id;
-        js.src = "//connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v2.9";
-        fjs.parentNode.insertBefore(js, fjs);
-      }(document, 'script', 'facebook-jssdk'));</script>
-    <!--end facebook Link-->
-
-    <!--share-->
-    <div id="fb-root"></div>
-    <script>(function(d, s, id) {
-      var js, fjs = d.getElementsByTagName(s)[0];
-      if (d.getElementById(id)) return;
-      js = d.createElement(s); js.id = id;
-      js.src = "//connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v2.9";
-      fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));</script>
-   <!--end share-->
-
       <!-- NAVBAR -->
   		<nav class="navbar navbar-default transparent navbar-fixed-top" role="navigation">
   			<div class="container">
@@ -69,9 +49,9 @@
   				<div class="collapse navbar-collapse" id="top-navbar-1">
   					<ul class="nav navbar-nav navbar-right">
   						<li><a class="scroll-link" href="index.html">首頁</a></li>
-  						<li><a class="scroll-link" href="#new">最新消息</a></li>
+  						<li><a class="scroll-link" href="news.html">最新消息</a></li>
   						<li><a class="scroll-link" href="foodto.html">服務對象</a></li>
-  						<li><a class="scroll-link" href="#hungry">認識飢餓</a></li>
+  						<li><a class="scroll-link" href="recognize.html">認識飢餓</a></li>
   						<li><a class="scroll-link" href="donate.html">捐贈方式</a></li>
               <li><a class="scroll-link" href="list.html">捐款名單</a></li>
               <li>
@@ -88,110 +68,58 @@
   		</nav>
       <!--end NavBar-->
       <div class="article">
-        <!--Carousel-->
-        <div class="row">
-          <div id="myCarousel" class="carousel slide" data-ride="carousel">
-            <!-- Indicators -->
-            <ol class="carousel-indicators">
-              <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-              <li data-target="#myCarousel" data-slide-to="1"></li>
-              <li data-target="#myCarousel" data-slide-to="2"></li>
-            </ol>
-            <!-- Wrapper for slides -->
-            <div class="carousel-inner" role="listbox">
-              <div class="item active" id="slide1">
-                <img src="img/weather.jpg" alt="p1">
-                <div class="carousel-caption">
-                  <div class="text">
-                    <p>氣候變遷，跟你我有關
-                      氣候變遷 對人類 帶來的 不只是災難頻傳 還有 土壤乾化 更直接的影響是
-                      你我所需的糧食變少了 當有一天石油與電費比現在更昂貴 民生所需價格高漲
-                       吃飽 ..... 也就不再是一件 也就不再是一件 隨時可達成的任務了
-                     aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
-                  </div>
-                </div>
-              </div>
-              <div class="item" id="slide2">
-                <img src="img/socialWorker.jpg" alt="p2">
-                <div class="carousel-caption">
-                  <div class="text">
-                    <p>社工，是最美麗溫暖的一群人
-                      可以為社會公益出一份力，是最驕傲又勇敢的件事 歡迎大家一
-                      起來參與食物銀行的工作
-                      我們長期需要志工來協助食物分配與運送的任務</p>
-                  </div>
-                </div>
-              </div>
-              <div class="item" id="slide3">
-                <img src="img/trash.jpg" alt="p3">
-                <div class="carousel-caption">
-                  <div class="text">
-                    <p>腐敗的垃圾，去了哪裡？
-                      掩埋垃圾造成土壤酸化， 這嚴重影響了土地的可用性 酸化後的土壤種植出遭受汙染作物
-                      而這些作物 汙染了你我的健康 更影響了世代 你我子孫的生命安全</p>
-                  </div>
-                </div>
-              </div>
-            </div> <!--end carousel-inner-->
-            <!-- Controls -->
-            <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-              <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-              <span class="sr-only">Previous</span>
-            </a>
-            <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-              <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-              <span class="sr-only">Next</span>
-            </a> <!--end control-->
-        </div> <!--end Carousel-->
-          <div class="whatWeDo">
-            <h1>我們做些什麼?</h1>
-            <h3>Food Bank 提供捐款平台，讓大家可以透過此平台改善飢餓問題並解決貧困，幫助弱勢族群，回饋社會</h3>
-          </div>
+        <div class="img_center">
+          <img src="img/news_1.jpg" alt="news_1">
+        </div>
+        <h2>【福音社福　永續服務】</h2>
+        <div class="text1">
+          <p>由基督教芥菜種會、台中大慶聖教會食物銀行、好牧人全人關顧協會所發起的全台
+            「教會社區食物銀行說明會」，全民食物銀行榮幸地參與台東和台中兩場次；了解許
+            多教會不僅傳福音，也希望透過此食物銀行方案的結合，減少物資與剩食的流失，更
+            努力地關懷在地弱勢！社區能更溫馨和樂，逐漸邁向「老有所養、幼有所教、貧有所
+            依、難有所助」的美好境界！<br>我們一本初衷地持續推動【資源不浪費 台灣無飢
+            餓; No Waste, No Hunger】宗旨，竭盡所能籌募物資，也期望社會大眾能予以更
+            多的支持與鼓勵。</p>
+        </div>
+        <div class="img_center"><img src="img/news_2.PNG" alt="news_2"></div>
+        <div class="img_center"><img src="img/news_3.PNG" alt="news_3"></div>
 
+        <h2>【雪中送炭，溫馨膳循環】</h2>
+        <div class="text1">
+          <p>全民食物銀行於去年11月接獲台中女中委託，希望能協助媒合領取未碰口午膳的單
+            位；在了解女中楊同學、柳同學與林同學已於校內推廣凝聚共識，並已籌組「聖食志
+            工隊」，全民食銀立即邀請社會局社會救助科陳股長與有供餐的合作夥伴，共同前往
+            女中商議執行細節。<br>感謝學務處王主任的鼎力相助，以及聖食志工隊積極提供相
+            關資料，我們順利洽詢到南區的大慶關懷協會，以及梧棲的台中更生團契，將於農曆
+            年後新學期開始，派員領回未碰口午膳；不僅幫助更多弱勢家庭受惠，同時更具正向
+            教育意義！目前知悉台中已有其他學校和廠商有相關捐贈意願，歡迎更多的供餐社福
+            機構與我們合作，一起努力讓台中更溫馨美好～<br><br>(感謝平傳媒-盧專員採訪!)
+            </p>
+        </div>
+        <div class="img_center"><img src="img/news_4.PNG" alt="news_4"></div>
+        <div class="img_center"><img src="img/news_5.PNG" alt="news_5"></div>
 
-          <div class="container">
-            <div class="row pic">
-              <div class="col-lg-4">
-                <img width="280" height="280" src="http://acumen.org/wp-content/uploads/2013/04/baco-280x280.png">
-                <h4>收集食物 不浪費任何資源</h4>
-              </div>
-              <div class="col-lg-4">
-                <img width="280" height="280" src="http://acumen.org/wp-content/uploads/2013/02/India-Kids-280x280.jpg">
-                <h4>幫助弱勢偏鄉孩童 遠離飢餓</h4>
-              </div>
-              <div class="col-lg-4">
-                <img width="280" height="280" src="http://www.solihullsfc.ac.uk/wp-content/uploads/2016/09/food_bank_2016.jpg">
-                <h4>將募得資源 發送各地</h4>
-              </div>
-            </div><!--end row pic-->
-
-
-            <div class="row operation">
-              <div class="col-lg-6">
-                <h2>食物銀行是一個社會慈善組織，收集來自全省各地量販店、中盤商、零售商、製造商、甚至個人捐贈的愛心物資，
-                  也會搶救即將被丟棄的可食用物資，進行妥善的儲存與分類後，再將食物重新分配給最需要的人們手中。</h2>
-              </div>
-              <div class="col-lg-6">
-                <img width="550" src="https://static1.squarespace.com/static/55e653c2e4b02be29ced27cd/t/562dd43be4b079eaf392c336/1454061456078/?format=750w" alt="">
-              </div>
-            </div>
-            <div class="row facebookFans">
-              <div class="col-lg-6">
-                <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fpeoplefoodbank%3Fref%3Dbookmarks&tabs=timeline&width=500&height=350&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="500" height="350" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
-              </div>
-              <div class="col-lg-6">
-                <h2>透過食物銀行的整合、供給，達到「資源不浪費，台灣無飢餓」的目標。確保可食用的食物不被浪費，且有效地分配給有需要的人。</h2>
-                <!-- Your share button code -->
-                <iframe src="https://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2Fwww.facebook.com%2Fpg%2Fpeoplefoodbank%2Fabout%2F%3Fref%3Dpage_internal&layout=button&size=large&mobile_iframe=true&width=65&height=28&appId" width="98" height="42" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>        <!--end share button-->
-                <div class="fb-share-button"
-                  data-href="https://www.facebook.com/pg/peoplefoodbank/about/?ref=page_internal"
-                  data-layout="button_count">
-                </div>
-                <!--end share button-->
-              </div>
-            </div><!--end facebookFans-->
-          </div><!--end container-->
-      </div> <!--end article-->
+        <h2>【1111單身節　環保公益不孤單】</h2>
+        <div class="text1">非常感謝廠商與民眾們多年來的支持！<br>
+                           歐洲經貿辦事處邀請我們全民食銀<br>
+                           偕同主婦聯盟環保基金會<br>
+                           前往參加 #2016台歐綠色嘉年華<br>
+                           現場不僅倡導珍惜食物<br>
+                           更準備了體驗遊戲與民眾同樂～<br>
+                           在未來的日子裡我們會繼續打拼<br>
+                           與全台協力夥伴共同守護每份愛心<br>
+                           達成「資源不浪費　台灣無飢餓」的理想目標！<br><br><br>
+                           <a href="https://www.facebook.com/hashtag/%E6%AD%90%E6%B4%B2%E7%B6%93%E8%B2%BF%E8%BE%A6%E4%BA%8B%E8%99%95?source=feed_text&story_id=986786594760543">
+                           #歐洲經貿辦事處<br></a>
+                           <a href="https://www.facebook.com/hashtag/%E5%85%A8%E6%B0%91%E9%A3%9F%E7%89%A9%E9%8A%80%E8%A1%8C?source=feed_text&story_id=986786594760543">
+                           #全民食物銀行<br></a>
+                           <a href="https://www.facebook.com/hashtag/dhl?source=feed_text&story_id=986786594760543">
+                           #DHL<br></a>
+                           <a href="https://www.facebook.com/hashtag/%E4%B8%BB%E5%A9%A6%E8%81%AF%E7%9B%9F%E7%92%B0%E5%A2%83%E4%BF%9D%E8%AD%B7%E5%9F%BA%E9%87%91%E6%9C%83?source=feed_text&story_id=986786594760543">
+                           #主婦聯盟環境保護基金會<br></a>
+      </div>
+      </div>
+      <div class="img_center"><img src="img/news_6.PNG" alt="news_6"></div>
 
       <div class="footer">
         <h2>幫助我們 現在捐款</h2>
