@@ -56,6 +56,7 @@ $(document).ready(function(){
                   }).catch(function(error){
                     console.error("寫入使用者資訊錯誤",error);
                   });
+                  alert("註冊成功, 謝謝您的註冊。")
                   setTimeout(function(){
                       location.href = "index.html";
                   },800);
