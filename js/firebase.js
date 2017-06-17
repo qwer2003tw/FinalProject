@@ -1,10 +1,4 @@
 $(document).ready(function(){
-
-  //initial dialog
-  $( "#dialog" ).dialog({
-    autoOpen: false
-  });
-
   // Initialize Firebase
   var config = {
     apiKey: "AIzaSyDSZeAKZrLGU2tLIYctRaVaETtyMUkzZlE",
@@ -172,6 +166,14 @@ function checkLogin() {
 };
 
 function modify(){
+
+
+    //initial dialog
+    $( "#dialog" ).dialog({
+      autoOpen: false
+    });
+
+
   $( "#dialog" ).dialog('open');
   $( "#nt1").val($( "#nameDisplay").html());
   $( "#nt2").val($( "#birthDisplay").html());
