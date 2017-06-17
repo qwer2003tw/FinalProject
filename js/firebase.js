@@ -149,7 +149,7 @@ function checkUser() {
   firebase.auth().onAuthStateChanged(function(user) {
     if (user) {
       firebase.auth().signOut();
-      location.href="SignUpIn.html";
+      location.href="signUpIn.html";
     }
   })
 };
