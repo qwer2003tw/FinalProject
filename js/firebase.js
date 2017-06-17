@@ -160,7 +160,7 @@ function checkLogin() {
 
     }
     else {
-      location.href="SignUpIn.html";
+      location.href="signUpIn.html";
     }
   })
 };
