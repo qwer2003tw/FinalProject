@@ -166,8 +166,13 @@ function checkLogin() {
 };
 
 function modify(){
-
-
+  document.getElementById("profileDisplay").style.display = "none";
+  document.getElementById("modifyDisplay").style.display = "block";
+  $( "#nt1").val($( "#nameDisplay").html());
+  $( "#nt2").val($( "#birthDisplay").html());
+  $( "#nt3").val($( "#emailDisplay").html());
+  $( "#nt4").val($( "#phoneDisplay").html());
+/*
     //initial dialog
     $( "#dialog" ).dialog({
       autoOpen: false
@@ -179,9 +184,11 @@ function modify(){
   $( "#nt2").val($( "#birthDisplay").html());
   $( "#nt3").val($( "#emailDisplay").html());
   $( "#nt4").val($( "#phoneDisplay").html());
+*/
 };
 
 function Update() {
+
   var dbUser = firebase.database().ref().child('users');
   var user = firebase.auth().currentUser;
 
