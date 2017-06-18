@@ -7,15 +7,17 @@
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:400,100,300,500">
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/animate.css">
+    <!--link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/form-elements.css">
-    <link rel="stylesheet" href="css/media-queries.css">
+    <link rel="stylesheet" href="css/media-queries.css"-->
     <link rel="stylesheet" href="css/style.css">
 
     <!--Javascript-->
     <script src="js/jquery-1.11.1.min.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>
-    <script src="assets/js/jquery.backstretch.min.js"></script>
+    <!--script src="assets/js/jquery.backstretch.min.js"></script-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.1.2/firebase.js"></script>
     <script src="js/firebase.js"></script>
 
     <!--fans-->
@@ -56,8 +58,8 @@
               <li>
                 <a class="dropdown-toggle" data-toggle="dropdown" href="#member">會員中心 <span class="caret"></span></a>
                   <ul class="dropdown-menu">
-                    <li><a href="#">登入/註冊</a></li>
-                    <li><a href="#">會員資料</a></li>
+                    <li><a href="signUpIn.html" id="signUpIn" onclick="checkUser()">登入/註冊</a></li>
+                    <li><a href="#" onclick="checkLogin()">會員資料</a></li>
                   </ul>
               </li>
               <li><a class="scroll-link" href="#about-us">關於我們</a></li>
