@@ -1,18 +1,17 @@
-.text1{
-  margin:20px 255px 20px 300px;
+.reg_text1{
+  margin:20px 180px 20px 150px;
   font-size: 16px;
 }
-ul{
+.reg_ul{
   margin:20px 300px 20px 300px;
   font-size: 16px;
 }
-.text2{
-  margin:20px 300px 20px 300px;
-  font-size: 16px;
+.reg_img_center img{
+  width:80%;
+  border-radius:5%;
+  margin:20px 100px 20px 100px;
 }
-.pic img{
-  width:70%;
-  margin-left: 220px;
-  margin-right: 30px;
-  border-radius: 5%;
+.reg_text_h2{
+  font-size:25px;
+  margin:20px 180px 20px 150px;
 }
