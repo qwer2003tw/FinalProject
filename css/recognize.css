@@ -1,6 +1,5 @@
-@import url("homeStyle.css");
 .text1{
-  margin:20px 300px 20px 300px;
+  margin:20px 255px 20px 300px;
   font-size: 16px;
 }
 ul{
@@ -11,6 +10,9 @@ ul{
   margin:20px 300px 20px 300px;
   font-size: 16px;
 }
-.img_center{
-  margin:20px 300px 20px 300px;
+.pic img{
+  width:70%;
+  margin-left: 220px;
+  margin-right: 30px;
+  border-radius: 5%;
 }
