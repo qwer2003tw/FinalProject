@@ -7,9 +7,9 @@
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:400,100,300,500">
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/animate.css">
+    <!--link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/form-elements.css">
-    <link rel="stylesheet" href="css/media-queries.css">
+    <link rel="stylesheet" href="css/media-queries.css"-->
     <link rel="stylesheet" href="css/style.css">
 
 
@@ -67,14 +67,27 @@
             <div class="head">
               <img src="img/LOGO.png" width="250"  alt="">
             </div>
-            <h4>姓名：<span id="nameDisplay"></span></h4>
-            <h4>生日：<span id="birthDisplay"></span></h4>
-            <h4>電子郵件：<span id="emailDisplay"></span></h4>
-            <h4>電話號碼：<span id="phoneDisplay"></span></h4>
-            <h4 id="recordDisplay"></h4>
-            <div class="submit">
-              <button type="submit" id="modify" class="sign_btn" onclick="modify()">修改資料</button>
+            <div id="profileDisplay">
+              <h4>姓名：<span id="nameDisplay"></span></h4>
+              <h4>生日：<span id="birthDisplay"></span></h4>
+              <h4>電子郵件：<span id="emailDisplay"></span></h4>
+              <h4>電話號碼：<span id="phoneDisplay"></span></h4>
+              <div class="submit">
+                <button type="submit" id="modify" class="sign_btn" onclick="modify()">修改資料</button>
+              </div>
             </div>
+
+            <!---->
+            <div id="modifyDisplay" style="display:none">
+              <h4>姓名：<input type="name"  id="nt1" value=""></h4>
+              <h4>生日：<input type="date"  id="nt2" value=""></h4>
+              <h4>電子郵件：<input type="mail"  id="nt3" value=""></h4>
+              <h4>電話號碼：<input type="tel"  id="nt4" value=""></h4>
+              <button type="submit" name="button" class="sign_btn" onclick="Update()" id="update">送出</button>
+            </div>
+
+            <!---->
+
           </div>
           <div class="col-lg-4">
             <div class="record">
@@ -91,13 +104,13 @@
           </div>
         </div>
       </div>
-      <div id="dialog" title="修改個人資料" style="display:none" style="overflow-y: scroll; overflow-x: hidden;">
+      <!--div id="dialog" title="修改個人資料" style="display:block" style="overflow-y: scroll; overflow-x: hidden;">
         <h4>姓名：</h4><input type="name"  id="nt1" value=""><br>
         <h4>生日：</h4><input type="date"  id="nt2" value=""><br>
         <h4>電子郵件：</h4><input type="mail"  id="nt3" value=""><br>
         <h4>電話號碼：</h4><input type="tel"  id="nt4" value=""><br>
         <button type="submit" name="button" onclick="Update()" id="update">送出</button>
-      </div>
+      </div-->
       <!--Footer-->
       <div class="footer">
         <h2>幫助我們 現在捐款</h2>

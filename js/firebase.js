@@ -106,22 +106,24 @@ if(loginSmtBtn != null)
       //if(!donateLogin)donateLogin.style.display = "none";
       console.log("User is logined", user);
       signUpIn.innerHTML= "登出";
+      if(document.getElementById("nameDisplay") !== null)
+      {
+        var nameDisplay = document.getElementById("nameDisplay");
+        var birthDisplay = document.getElementById("birthDisplay");
+        var emailDisplay = document.getElementById("emailDisplay");
+        var phoneDisplay = document.getElementById("phoneDisplay");
+        // profile
 
-      var nameDisplay = document.getElementById("nameDisplay");
-      var birthDisplay = document.getElementById("birthDisplay");
-      var emailDisplay = document.getElementById("emailDisplay");
-      var phoneDisplay = document.getElementById("phoneDisplay");
-      // profile
-
-      firebase.database().ref('/users/' + user.uid).once('value').then(function(snapshot) {
-        //var userInfoText = "使用者姓名："+snapshot.val().name+", 使用者年齡:"+snapshot.val().age;
-        nameDisplay.innerHTML = snapshot.val().name;
-        birthDisplay.innerHTML = snapshot.val().birth;
-        emailDisplay.innerHTML = snapshot.val().email;
-        phoneDisplay.innerHTML = snapshot.val().number;
-        //userInfo.innerHTML = userInfoText;
-      });
-      // end profile
+        firebase.database().ref('/users/' + user.uid).once('value').then(function(snapshot) {
+          //var userInfoText = "使用者姓名："+snapshot.val().name+", 使用者年齡:"+snapshot.val().age;
+          nameDisplay.innerHTML = snapshot.val().name;
+          birthDisplay.innerHTML = snapshot.val().birth;
+          emailDisplay.innerHTML = snapshot.val().email;
+          phoneDisplay.innerHTML = snapshot.val().number;
+          //userInfo.innerHTML = userInfoText;
+        });
+        // end profile        
+      }
       var nowUser = firebase.auth().currentUser;
       dbRef=firebase.database().ref('/users/' + nowUser.uid +'/list/');
 
@@ -134,9 +136,10 @@ if(loginSmtBtn != null)
 
 
       //
-
-      document.getElementById("donatelogIn").style.display = "none";
-      document.getElementById("donateForm").style.display = "block";
+      if(document.getElementById("donatelogIn") !== null){
+        document.getElementById("donatelogIn").style.display = "none";
+        document.getElementById("donateForm").style.display = "block";
+      }
     } else {
     	user = null;
       console.log("User is not logined yet.");
@@ -166,14 +169,32 @@ function checkLogin() {
 };
 
 function modify(){
-  $( "#dialog" ).dialog();
+  if(document.getElementById("profileDisplay") !== null)
+  {
+    document.getElementById("profileDisplay").style.display = "none";
+    document.getElementById("modifyDisplay").style.display = "block";
+  }
   $( "#nt1").val($( "#nameDisplay").html());
   $( "#nt2").val($( "#birthDisplay").html());
   $( "#nt3").val($( "#emailDisplay").html());
   $( "#nt4").val($( "#phoneDisplay").html());
+/*
+    //initial dialog
+    $( "#dialog" ).dialog({
+      autoOpen: false
+    });
+
+
+  $( "#dialog" ).dialog('open');
+  $( "#nt1").val($( "#nameDisplay").html());
+  $( "#nt2").val($( "#birthDisplay").html());
+  $( "#nt3").val($( "#emailDisplay").html());
+  $( "#nt4").val($( "#phoneDisplay").html());
+*/
 };
 
 function Update() {
+
   var dbUser = firebase.database().ref().child('users');
   var user = firebase.auth().currentUser;
 
