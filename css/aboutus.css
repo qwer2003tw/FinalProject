@@ -1,17 +1,5 @@
-/*
-body > div.article > div > div:nth-child(1) > div:nth-child(1) > img{
-    border-radius: 50%;
-}
-body > div.article > div > div:nth-child(1) > div:nth-child(2) > img{
-    border-radius: 50%;
-}
-body > div.article > div > div:nth-child(1) > div:nth-child(3) > img{
-    border-radius: 50%;
-}
-*/
 .article .container{
   padding-top: 50px;
-
 }
 .Arrow img{
   padding-top: 50%;
