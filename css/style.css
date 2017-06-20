@@ -138,6 +138,14 @@ body{
   .circle h4{
     font-size: 30px;
   }
+  .sign_row h4{
+    text-align: left;
+    padding-left: 10%;
+  }
+
+
+
+
 }
 
 @media (max-width: 767px) {
@@ -172,6 +180,13 @@ body{
     background-color: RGB(238, 238, 238);
     border-radius: 50%;
   }
+  .sign_row h4{
+    text-align: left;
+    padding-left: 17%;
+  }
+  .loginText h4{
+    padding-left: 6%;
+  }
 }
 
 @media (max-width: 415px) {
@@ -179,5 +194,8 @@ body{
     margin-top: 30%;
   }
 
+
+}
+@media (max-width: 991px) {
 
 }

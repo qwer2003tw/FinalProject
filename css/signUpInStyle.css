@@ -1,4 +1,4 @@
-.signUptext, .signIntext{
+.signUptext{
   font-weight: bold;
   margin-bottom: 30px;
   text-align: center;
@@ -19,4 +19,7 @@ input{
   width: 160px;
   height: 50px;
   margin-top: 20px;
+}
+.loginText{
+  padding-left: 0px;
 }
