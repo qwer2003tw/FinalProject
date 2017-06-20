@@ -95,6 +95,9 @@ body{
   .circle h4{
     font-size: 30px;
   }
+  .goal{
+    display: inline;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -142,10 +145,9 @@ body{
     text-align: left;
     padding-left: 10%;
   }
-
-
-
-
+  .goal{
+    display: inline;
+  }
 }
 
 @media (max-width: 767px) {
@@ -187,15 +189,16 @@ body{
   .loginText h4{
     padding-left: 6%;
   }
+  .goal{
+    display: none;
+  }
 }
 
 @media (max-width: 415px) {
   .article{
     margin-top: 30%;
   }
-
-
-}
-@media (max-width: 991px) {
-
+  .goal{
+    display: none;
+  }
 }

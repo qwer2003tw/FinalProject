@@ -1,3 +1,4 @@
+/*
 body > div.article > div > div:nth-child(1) > div:nth-child(1) > img{
     border-radius: 50%;
 }
@@ -7,16 +8,28 @@ body > div.article > div > div:nth-child(1) > div:nth-child(2) > img{
 body > div.article > div > div:nth-child(1) > div:nth-child(3) > img{
     border-radius: 50%;
 }
+*/
 .article .container{
   padding-top: 50px;
 
 }
-body > div.article > div > div:nth-child(2) > div:nth-child(1){
-  padding-left: 55px;
+.Arrow img{
+  padding-top: 50%;
+  width: 100px;
+  height: auto;
 }
-body > div.article > div > div:nth-child(2) > div:nth-child(2){
-  padding-left: 55px;
+.Abouttitle
+{
+  padding: 0px;
+  margin-bottom: 50px;
 }
-body > div.article > div > div:nth-child(2) > div:nth-child(3){
-  padding-left: 55px;
+.Abouttitle h2{
+  font-weight: bold;
+}
+.AboutText h4
+{
+  line-height: 50px;
+}
+.aboutImg img{
+  border-radius: 50%;
 }
